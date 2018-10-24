@@ -28,7 +28,7 @@ class ColoredView: UIView
   override var intrinsicContentSize: CGSize {
     let h = getHeightAccordingToDeviceOrientation()
     printDebug("height is ", h)
-    return CGSize(width: .greatestFiniteMagnitude, height: h)
+    return CGSize(width: 0, height: h)
   }
   
   func getHeightAccordingToDeviceOrientation() -> CGFloat
